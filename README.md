@@ -1,8 +1,28 @@
-# Gruppo 1 #
+# Progetto HelloWorld con Django #
 
-aggiungi descrizione del progetto
+
+## Install requirements
+
+```bash
+
+pip install -r requirements.txt
+
+```
+
 
 
 ## Setup
 
-python manage.py createproject helloworld
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+```
+
+## Test
+
+```bash
+python manage.py test
+
+```
