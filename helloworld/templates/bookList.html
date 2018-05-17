@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Books Listing</title>
+</head>
+<body>
+<h1>All Bbooks</h1>
+<ul>
+    {% for book in books %}
+        <li>
+            <h2><a href="{{ book.get_absolute_url }}">{{ book.title }}</a></h2>
+            {% if book.genre %}<p>{{ book.genre }}</p>{% endif %}
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
