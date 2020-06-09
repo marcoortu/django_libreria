@@ -1,8 +1,8 @@
 import unittest
 
-from django.contrib.auth import authenticate
 from django.test import TestCase, Client
-from helloworld.models import *
+
+from libreria.models import *
 
 
 class ModelTest(TestCase):

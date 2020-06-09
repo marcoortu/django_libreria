@@ -1,4 +1,4 @@
 .idea/
 venv/
-helloworld/migrations
+libreria/migrations
 *.pyc

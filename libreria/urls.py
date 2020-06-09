@@ -1,4 +1,4 @@
-"""helloworld URL Configuration
+"""libreria URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.10/topics/http/urls/
@@ -13,19 +13,19 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
 from django.contrib import admin
+from django.urls import path
 
-from helloworld import views
+from libreria import views
 
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^hello/', views.hello),
-    url(r'^books/', views.bookList),
-    url(r'^book/(?P<bookId>\d+)/', views.bookDetail, name="book-detail"),
-    url(r'^author/create', views.authorCreate, name="author-create"),
-    url(r'^genre/create', views.genreCreate, name="genre-create"),
-    url(r'^orders/', views.orders, name="orders"),
+    path('admin/', admin.site.urls),
+    path('hello/', views.hello),
+    path('books/', views.book_list),
+    path('book/<int:book_id>/', views.book_detail, name="book-detail"),
+    path('author/create', views.author_create, name="author-create"),
+    path('genre/create', views.genre_create, name="genre-create"),
+    path('orders/', views.orders, name="orders"),
 ]

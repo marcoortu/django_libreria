@@ -1,4 +1,4 @@
-# Progetto HelloWorld con Django #
+# Progetto Libreria con Django #
 
 
 ## Install requirements
