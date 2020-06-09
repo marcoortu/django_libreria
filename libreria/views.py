@@ -22,7 +22,7 @@ def book_detail(request, book_id):
         book = None
 
     return render(request,
-                  "book_details.html",
+                  "book_detail.html",
                   {
                       'book': book,
                       'book_id': book_id
